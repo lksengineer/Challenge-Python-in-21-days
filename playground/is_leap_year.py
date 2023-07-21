@@ -10,5 +10,5 @@ def is_leap_year(year):
 
 
 if __name__ == '__main__':
-    year = "200"
+    year = "2024"
     print(is_leap_year(year))
