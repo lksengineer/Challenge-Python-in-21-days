@@ -25,7 +25,7 @@ def find_famous_cat(cats):
     return famous_cat_total
   else:
     # return ("The array has no cats")
-    return ("The array has no cats")
+    print("The array has no cats")
 
 cats = [
   {
