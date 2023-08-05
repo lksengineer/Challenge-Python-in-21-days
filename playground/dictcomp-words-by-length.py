@@ -2,10 +2,6 @@ def count_words_by_length(words):
   """Function to count words by length"""
   # Declaro a Dict
   words_by_length = {}
-
-  if not words:
-    return words_by_length
-    
   # Itero the words list for create the dict with dict comprehension
   # for word in words:
   #   # Calculate len of the word
@@ -28,5 +24,5 @@ if __name__ == '__main__':
   words = ["apple", "banana", "orange", "grapefruit", "pear", "kiwi"]
   words2 = []
 
-  response = count_words_by_length(words)
+  response = count_words_by_length(words2)
   print(response)
