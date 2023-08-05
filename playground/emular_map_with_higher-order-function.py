@@ -22,3 +22,4 @@ if __name__ == '__main__':
     {"name": "firulais", "age": 6}], lambda pet: pet["name"])
   
   print(response)
+  
