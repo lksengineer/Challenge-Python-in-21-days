@@ -9,7 +9,7 @@ except ZeroDivisionError as error:
 try:
   assert 1 != 1, "Uno no es igual que uno"
 except AssertionError as error:
-  print(f"AssertionError: {error}")
+  print(error)
 
 age = 10
 try:
