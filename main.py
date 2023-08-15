@@ -1,38 +1,41 @@
-# Mode 1
-print("\nFirst Mode:")
-try:
-  print(0 / 0)
-except ZeroDivisionError as error:
-  print(error)
-  
+mySet = {1, 3, 2, 4, 6, 3}
+print(mySet)
 
-try:
-  assert 1 != 1, "Uno no es igual que uno"
-except AssertionError as error:
-  print(f"AssertionError: {error}")
+mySet.add(7)
+print(mySet)
 
-age = 10
-try:
-  if age < 18:
-    raise Exception('No se permiten menores de edad')
-except Exception as error:
-  print(error)
+mySet.add(";")
+print(mySet)
 
+mySet.pop()
+print(mySet)
 
-# Mode 2
-print("\nSecond Mode:")
-try:
-  print(0 / 0)
-  assert 1 != 1, 'Uno no es igual que uno'
-  age = 10
-  if age < 18:
-    raise Exception('No se permiten menores de edad')
-except ZeroDivisionError as error:
-  print(error)
-except AssertionError as error:
-  print(error)
-except Exception as error:
-  print(error)
+mySet.pop()
+print(mySet)
 
-print('Hola')
-print('Hola 2')
+mySet.add(";")
+print(mySet)
+
+mySet.remove(";")
+print(mySet)
+
+mySet.add(";")
+print(mySet)
+
+mySet.discard("'';")
+print(mySet)
+
+# count(): Counts how many times an element is in a list
+print("\nCOUNT() How many times an element in the list")
+numbers = [1, 4, 1, 3, 2, 1]
+print(numbers.count(1)) # 3
+
+# extend(lista): Permite extender una lista agregándole los elementos de otra lista.
+print("\nEXTEND() Extiende una lista agregándole los elementos de otra lista")
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list1.extend(list2)
+# list2.extend(list1)
+print(list1 + list2)
+print(list1) # [1, 2, 3, 4, 5, 6]
+print(list2) # [4, 5, 6]

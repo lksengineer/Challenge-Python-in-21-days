@@ -13,7 +13,7 @@ remove(value): elimina un valor específico del set. Si el valor no existe, se g
 
 discard(value): elimina un valor específico del set. Si el valor no existe, no se genera ningún error.
 
-pop(): elimina y devuelve un elemento aleatorio del set.
+pop(): elimina el primer elemento y devuelve un elemento aleatorio del set.
 
 clear(): vacía completamente el set.
 

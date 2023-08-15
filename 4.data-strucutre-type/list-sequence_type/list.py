@@ -7,8 +7,8 @@ print(colors[0]) # red
 # Update a specific value in the list.
 print("\nUpdate list")
 numbers = [1, 4, 5, 6, 2, 8]
-numbers[0] = 8
 print(numbers[0]) # 1
+numbers[0] = 8
 print(numbers) # [8, 4, 5, 6, 2, 8]
 
 
@@ -30,15 +30,17 @@ print(colors) # ["brown", "white", "newwine"]
 # count(): Counts how many times an element is in a list
 print("\nCOUNT() How many times an element in the list")
 numbers = [1, 4, 1, 3, 2, 1]
-print(numbers.count(1))
+print(numbers.count(1)) # 3
 
 # extend(lista): Permite extender una lista agregándole los elementos de otra lista.
 print("\nEXTEND() Extiende una lista agregándole los elementos de otra lista")
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
 list1.extend(list2)
-print(list1)
-print(list2)
+# list2.extend(list1)
+print(list1 + list2)
+print(list1) # [1, 2, 3, 4, 5, 6]
+print(list2) # [4, 5, 6]
 
 # reverse(): Reverses the order of the list items
 print("\nREVERSE() Reverses the order of the list items")
